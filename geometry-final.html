@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoMCP Diagram</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .frame {
+      margin-top: 20px;
+      background: #fff;
+      border: 1px solid #d4d4d4;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    object {
+      display: block;
+      width: 100%;
+      min-height: 620px;
+      background: #fff;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-left: 4px solid #0f766e;
+      background: #ecfeff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hình vẽ từ engine GeoMCP</h1>
+    <p>Cho đường tròn (O) có đường kính CD, tiếp tuyến tại C là đường thẳng Cx. Lấy điểm E thuộc đường tròn (O). Qua O kẻ đường thẳng vuông góc với CE, cắt Cx tại A. Qua D kẻ tiếp tuyến với đường tròn (O), tiếp tuyến này cắt AE tại B. Kẻ EH ⟂ CD tại H.</p>
+    <div class="frame">
+      <object data="./geometry-engine.svg" type="image/svg+xml">Trình duyệt không tải được SVG.</object>
+    </div>
+    <div class="note">Trang này không còn dùng hình vẽ tay. Nó hiển thị trực tiếp SVG được sinh từ parser, layout và renderer hiện tại.</div>
+  </main>
+</body>
+</html>
