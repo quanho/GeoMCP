@@ -104,6 +104,28 @@ Vi du trong cau hinh MCP client, tro den lenh start:
   - Output:
     - JSON gom `parsed`, `layout`, `svg`
 
+- `read_and_draw_geometry_v2_llm`
+  - Input:
+    - `problem` (string): de bai hinh hoc
+    - `llmModel` (string, optional): model LLM
+    - `fallbackToHeuristic` (boolean, optional, mac dinh `true`)
+  - Output:
+    - JSON gom `parserVersion`, `warnings`, `parsed`, `layout`, `svg`
+
+## Version 2 (LLM parser)
+
+Version cu van giu nguyen qua tool `read_and_draw_geometry`.
+Version 2 dung LLM qua tool `read_and_draw_geometry_v2_llm`.
+
+Dat bien moi truong truoc khi chay server:
+
+```bash
+export GEOMCP_OPENAI_API_KEY="<your_api_key>"
+export GEOMCP_OPENAI_MODEL="gpt-4.1-mini"
+# optional
+export GEOMCP_OPENAI_BASE_URL="https://api.openai.com/v1"
+```
+
 ## Vi du de bai
 
 ```text
